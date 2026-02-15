@@ -4,76 +4,243 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anne Jan Holtland - CV</title>
-  <link rel="stylesheet" href="style.css">
+  <title>AJ's Holding &mdash; MultiAqua</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-      <li><a href="inputs.html">Bericht sturen</a></li>
-    </ul>
-  </nav>
-
-  <header class="hero">
-    <img src="BMN_AnneJan2.png" alt="Profiel foto Anne Jan Holtland">
-    <h1>Anne Jan Holtland</h1>
-    <p class="subtitle">Oprichter &amp; CEO van AJ's Holding &mdash; <a href="https://www.multiaqua.nl" style="color:#93c5fd">MultiAqua</a></p>
-    <p class="personal">30 jaar oud &bull; 2 kinderen &bull; samen met Suzanne</p>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">AJ's <span>Holding</span></a>
+      <button class="menu-toggle" aria-label="Menu openen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#over">Over mij</a></li>
+        <li><a href="#diensten">Diensten</a></li>
+        <li><a href="#ervaring">Ervaring</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </header>
 
-  <main class="container">
-    <section>
-      <h2>Werkervaring</h2>
-      <div class="experience-item">
-        <span class="experience-year">2015 &ndash; heden</span>
-        <span class="experience-role">BMN Bouwmaterialen</span>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Welkom bij <span>MultiAqua</span></h1>
+      <p>Specialist in bouwmaterialen en wateroplossingen. Gedreven door ervaring, gebouwd op vertrouwen.</p>
+      <div class="hero-buttons">
+        <a href="#diensten" class="btn btn--primary">Onze diensten</a>
+        <a href="#contact" class="btn btn--outline">Neem contact op</a>
       </div>
-      <div class="experience-item">
-        <span class="experience-year">2010 &ndash; 2015</span>
-        <span class="experience-role">Wijck's Afbouwmaterialen</span>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Skills</h2>
-      <div class="skill-row">
-        <span class="skill-name">SQL</span>
-        <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
+  <!-- Over mij -->
+  <section id="over" class="section section--alt">
+    <div class="container">
+      <h2 class="section-title">Over mij</h2>
+      <p class="section-subtitle">De persoon achter het bedrijf</p>
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="images/BMN_AnneJan2.png" alt="Anne Jan Holtland">
+        </div>
+        <div class="about-text">
+          <h3>Anne Jan Holtland</h3>
+          <p>Oprichter en CEO van AJ's Holding. Met jarenlange ervaring in de bouwmaterialenbranche heb ik MultiAqua opgericht om klanten de beste service en producten te bieden.</p>
+          <p>Ik geloof in persoonlijke aandacht, kwaliteit en eerlijk zakendoen.</p>
+          <dl class="about-details">
+            <dt>Naam</dt>
+            <dd>Anne Jan Holtland</dd>
+            <dt>Bedrijf</dt>
+            <dd>AJ's Holding / MultiAqua</dd>
+            <dt>Locatie</dt>
+            <dd>Tuinderij 39</dd>
+            <dt>E-mail</dt>
+            <dd>annejan@multiaqua.nl</dd>
+          </dl>
+        </div>
       </div>
-      <div class="skill-row">
-        <span class="skill-name">Excel</span>
-        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-      </div>
-      <div class="skill-row">
-        <span class="skill-name">Talen</span>
-        <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
-      </div>
-      <div class="skill-row">
-        <span class="skill-name">Bier drinken</span>
-        <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
-      </div>
-      <div class="skill-row">
-        <span class="skill-name">Dansen</span>
-        <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Hobby's</h2>
-      <ul class="hobbies-list">
-        <li>Bier drinken</li>
-        <li>Vakantie</li>
-        <li>Dansen</li>
-      </ul>
-    </section>
-  </main>
+  <!-- Diensten -->
+  <section id="diensten" class="section">
+    <div class="container">
+      <h2 class="section-title">Diensten</h2>
+      <p class="section-subtitle">Wat wij voor u kunnen betekenen</p>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">&#128166;</div>
+          <h3>Wateroplossingen</h3>
+          <p>Professionele waterbeheersystemen en -oplossingen voor particulieren en bedrijven.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#127959;</div>
+          <h3>Bouwmaterialen</h3>
+          <p>Hoogwaardige bouwmaterialen geleverd met persoonlijk advies en snelle service.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#129309;</div>
+          <h3>Advies op maat</h3>
+          <p>Persoonlijk advies voor uw project. Van klein onderhoud tot grote verbouwingen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    &copy; 2026 Anne Jan Holtland
+  <!-- Werkervaring -->
+  <section id="ervaring" class="section section--alt">
+    <div class="container">
+      <h2 class="section-title">Werkervaring</h2>
+      <p class="section-subtitle">Mijn professionele achtergrond</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2015 &ndash; heden</div>
+          <h3>Oprichter &amp; CEO &mdash; AJ's Holding / MultiAqua</h3>
+          <p>Leiding geven aan een groeiend bedrijf in bouwmaterialen en wateroplossingen.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2015</div>
+          <h3>BMN Bouwmaterialen</h3>
+          <p>Ervaring opgedaan in de groothandel van bouwmaterialen.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2010 &ndash; 2015</div>
+          <h3>Wijck's Afbouwmaterialen</h3>
+          <p>Gestart in de branche met focus op afbouwmaterialen en klantcontact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-subtitle">Waar ik goed in ben</p>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-header"><span>SQL</span><span>100%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Excel</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Talen</span><span>60%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Klantrelaties</span><span>95%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Projectmanagement</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Bier drinken</span><span>100%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section--alt">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">Neem gerust contact met ons op</p>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-item">
+            <div class="contact-icon">&#128205;</div>
+            <div>
+              <h4>Adres</h4>
+              <p>Tuinderij 39</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">&#128231;</div>
+            <div>
+              <h4>E-mail</h4>
+              <p><a href="mailto:annejan@multiaqua.nl">annejan@multiaqua.nl</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">&#128222;</div>
+            <div>
+              <h4>Telefoon</h4>
+              <p><a href="tel:0612345678">06 1234 5678</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">&#127760;</div>
+            <div>
+              <h4>Website</h4>
+              <p><a href="https://www.multiaqua.nl">www.multiaqua.nl</a></p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" action="mailto:ajholtland@hotmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Je naam</label>
+            <input type="text" id="name" name="YourName" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Je e-mailadres</label>
+            <input type="email" id="email" name="YourEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Je bericht</label>
+            <textarea id="message" name="YourMessage" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Versturen</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>AJ's Holding</h4>
+          <p>Specialist in bouwmaterialen en wateroplossingen. Gedreven door ervaring, gebouwd op vertrouwen.</p>
+        </div>
+        <div>
+          <h4>Pagina's</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#over">Over mij</a></li>
+            <li><a href="#diensten">Diensten</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:annejan@multiaqua.nl">annejan@multiaqua.nl</a></li>
+            <li><a href="tel:0612345678">06 1234 5678</a></li>
+            <li><a href="https://www.multiaqua.nl">www.multiaqua.nl</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 AJ's Holding / MultiAqua &mdash; Alle rechten voorbehouden
+      </div>
+    </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
